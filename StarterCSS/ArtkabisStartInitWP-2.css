@@ -1,0 +1,433 @@
+/* ┌─────────────────────────────────────────────────────────────────────┐ \\
+// │ Artkabis 1.3 - JavaScript CSS Library                               │ \\
+// ├─────────────────────────────────────────────────────────────────────┤ \\
+// │ Copyright (c) 2015-2016 Gregory NICOLLE (http://urliss35.free.fr)   │ \\
+// │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
+// │ Licensed under the MIT (http://artkabisJS.com/license.html) license │ \\
+// └─────────────────────────────────────────────────────────────────────┘ \\
+   /* FRAMEWORK */
+   /** PROD OPTI V 1.03 *
+   <link rel="stylesheet" id="initCSS" href="https://rawcdn.githack.com/artkabis/Framework_AS3/f2f5c59fb7d7142389b2482a63f8d59361af71b3/initCSS.css" type="text/css" media="all">
+   ** DEV >> 
+   <link rel="stylesheet" id="initCSS" href="https://raw.githack.com/artkabis/Framework_AS3/f2f5c59fb7d7142389b2482a63f8d59361af71b3/initCSS.css" type="text/css" media="all">
+   */
+
+
+/*** FONTS ***/
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+/*************/
+
+
+/*
+HOOK TOOLS >>
+Contenu prédédent :
+<style>
+#Subheader{display:none!important;}
+</style>
+
+<script src="https://rawcdn.githack.com/mnater/Hyphenopoly/master/Hyphenopoly_Loader.js"></script>
+<style type="text/css">
+    .hyphenate {
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+</style>
+
+
+        
+Contenu suivant :
+<style>
+html {margin-top: 0 !important;}
+html #wpadminbar {display: none;}
+html body #Wrapper #Header_wrapper #Header #Top_bar {top: 0!important;}
+</style>
+
+/**********************************************************************************************************************************************************************************/
+
+
+/* *************************** HEADER **************************/
+/* Action bar */
+#Header #Action_bar{background-color: #E95E2C;}
+#Header #Action_bar .contact_details li { color: white!important;font-size:18px;}
+#Header #Action_bar .contact_details li a{ color: white!important;font-size:17px;}
+
+/* MENU */
+#Header #Top_bar #menu, #Header .sticky-tb-color #Top_bar.is-sticky {
+    background-color: #ffffff;
+    padding-bottom:0;
+}
+#Header #Top_bar .top_bar_left {
+    width: 1920px;
+    background-color: rgba(255, 255, 255, 0);
+}/* largeur et couleur de fond de la top_bar_left du menu */
+#Header #Top_bar .container {max-width: 1920px;}/* augmentantion de la largeur max du container lié au menu */
+/*padding left premier bouton menu */
+#Header #Top_bar .menu > li:last-child {padding-right: 10px;}
+#Header #Top_bar .menu > li:last-child {padding-right: 10px;}
+
+#Header #Top_bar .menu>li, #Header_creative #Top_bar .menu>li {
+    background: rgb(186, 188, 189);
+}
+/* couleur des liens du menu */
+#Header_creative #Top_bar .menu>li.current-menu-item>a, #Header #Top_bar .menu>li.current-menu-item>a, #Header_creative #Top_bar .menu>li.current_page_item>a, #Header #Top_bar .menu>li.current_page_item>a, 
+#Header_creative #Top_bar .menu>li.current-menu-parent>a, #Header #Top_bar .menu>li.current-menu-parent>a, #Header_creative #Top_bar .menu>li.current-page-parent>a, #Header #Top_bar .menu>li.current-page-parent>a,
+#Header_creative #Top_bar .menu>li.current-menu-ancestor>a, #Header #Top_bar .menu>li.current-menu-ancestor>a, #Header_creative #Top_bar .menu>li.current-page-ancestor>a, #Header #Top_bar .menu>li.current-page-ancestor>a, 
+#Header #Top_bar .menu>li.current_page_ancestor>a, #Header_creative #Top_bar .menu>li.hover>a, #Header #Top_bar .menu>li.hover>a{
+    color: #01B901;
+}
+
+/* texte des liens du menu */
+#Header #Top_bar .menu>li>a span:not(.description), #Header_creative #Top_bar .menu>li>a span:not(.description) {
+    padding: 0 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    background: rgb(0, 0, 0);
+}
+/* suppression de l'element de deco des boutons en hover et actif */
+#Header #Top_bar .menu > li a:after, #Header_creative #Top_bar .menu > li a:after{content:none;}
+
+/* border des span du menu */
+#Header #Top_bar .menu > li > a span, #Header_creative #Top_bar .menu > li > a span {
+    border-color: rgb(81, 199, 240);
+}
+
+/* couleur des liens par defaut du menu */
+#Header #Top_bar .menu > li > a, #Header_creative #Top_bar .menu > li > a {
+    color: #fff;
+}
+
+/* fond des bloc du menu */
+#Header #Top_bar .menu > li, #Header_creative #Top_bar .menu > li {
+    background: rgba(0,0,0,0.2);
+} 
+
+/* hamberger menu */
+.icon-menu-fine:before {
+    content: '\e960';
+    font-weight: 900;
+    color: #99CFFF;
+} 
+/* lien a hover menu */
+#Header #Top_bar .menu>li.hover>a , #Header_creative #Top_bar .menu>li.hover>a {
+    color: #99CFFF;
+}
+
+/*#Header #Top_bar .menu {z-index: 202;margin-right: 22px;}*/
+
+/* Sub Menu */
+#Header #Top_bar #menu ul li.submenu .menu-toggle , #Header_creative #Top_bar #menu ul li.submenu .menu-toggle {
+    color: #fff;
+}
+
+#Header #Top_bar .menu_wrapper {padding-left: 0;}
+
+#Header #Top_bar .column {
+    margin: 0!important;width: 100%!important;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+@media only screen and (min-width:1239px) and (max-width:1280px) {#Header #Top_bar .menu > li > a span:not(.description) {padding: 0 9px;}} /*Diminution espacement entre les boutons pour eviter saut de ligne du menu */
+/** SLIDER **/
+@media only screen and (max-width:1280px) {#mfn-rev-slider{display:none!important;}}/** caché sur mobile **/
+/* Si menu vertical >>
+@media only screen and (min-width: 1240px){.rev_slider_2_1_wrapper{padding-left: 250px;}}  */
+
+/* FOOTER **/
+.footer_action {display: none;}/** Desactivation footer appel à l'action contenant les microdatas */
+/*@media only screen and (max-width:1280px) { .myBtnFooter{padding-top:30px;}}*/
+/* Centrage des colonnes du footer */
+#text-4, #text-5, #text-6 {text-align: center;}
+#Footer .widgets_wrapper {background-color: #323232; overflow: hidden;}
+#Footer .textwidget a {color: #99CFFF;}
+#Footer .textwidget a:hover {text-decoration: underline;color: #99CFFF;}
+.copyright a {color: #b5a8b7;background: rgba(0, 0, 0, 0.38);padding: 0 5px 0 5px;color: #99CFFF!important;}
+
+/**************************************************** SOCIAL ******************************/
+.social li a i:hover {
+    color: #f5f5f5;
+    font-size: 180%!important;
+    transition: color .8s;
+    text-shadow: 0 0 8px rgba(0,0,0,.7);
+    transition: all .4s;
+}
+.social li a i {
+    font-size: 1.5em!important;
+    color: #8b8d92;
+    text-shadow: 0 0 9px rgba(0,0,0,.47);
+    transition: all .4s;
+}
+#Footer .footer_copy .social {
+    background-color: #bf2a2d;
+    padding-top: 3px;
+}
+#Footer .textwidget .vc_row > div{
+    text-align:center;
+}
+/***** Fin style btn FB ***/
+
+
+
+/** BASE **/
+.photo_wrapper .themebg{background-color: #CEBCA4;}
+.txt{font: normal normal 600 semi-condensed 15px/20px Lato,serif;letter-spacing: 2px;}/* Bloc texte de base */
+.txtStyle p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/***** Positionnement texte à gauche si screen < 1024 et que la class center n'est pas presente dans la colonne **/
+@media only screen and (max-width:1024px){
+    .wpb_column:not(.center) .wpb_wrapper p{
+        text-align:left!important;
+    }
+}
+@media only screen and (max-width:1024px){
+    .wpb_column.center .wpb_wrapper p{
+        text-align:center!important;
+    }
+}
+/**** MOBILE **************/
+@media only screen and (max-width:768px){
+    .wpb_single_image img {vertical-align: bottom!important;}/* Placement des triangle en alignement bottom pour eviter l'espacement*/
+    .txt div p {text-align: center!important;}/* Texte centré sur mobile */
+}
+
+/** COLORS **/
+.blue1, .blue1Li li, .blue1Link a {color:#99CFFF;}
+.beige, .beige1Link li,.beigeLink a{color:#CEBCA4!important;}
+.beige2, .beige2Link li,.beige2Link a{color:#F1EADA!important;}
+.beige3, .beige3Link li,.beige3Link a{color:#EEDEC4!important;}
+.beige4, .beige4Link li,.beige4Link a {color:#DCCBB5!important;}
+.gray1, .gray1Link li, .gray1Link a{color:#9e9e9e!important;}
+
+.bgBlue1,.bgBlue1-inner > .vc_column-inner{background-color:#99CFFF;}
+.bgGray1,.bgGray1-inner > .vc_column-inner{background-color:#9e9e9e!important;}
+.bgBeige,.bgBeige-inner > .vc_column-inner{background:#CEBCA4!important;}
+.bgBeige2,.bgBeige2-inner > .vc_column-inner{background:#F1EADA!important;}
+.bgBeige3,.bgBeige3-inner > .vc_column-inner{background:#EEDEC4!important;}
+.bgBeige4,.bgBeige4-inner > .vc_column-inner{background: #DCCBB5!important;}    
+
+.myH1 {
+    font-size: 33px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Josefin Sans',serif;
+}
+.myH2 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Josefin Sans',serif;
+}
+.myH3 {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Josefin Sans',serif;
+}
+.myH4 {font: normal normal 700 semi-condensed 14px/30px 'Josefin Sans',serif;text-transform: uppercase;}
+.myH1,.myH2,.myH3,.myH4{margin:0;}
+/* Ajout padding sur les coté en mode mobile */
+@media only screen and (max-width:660px){.myH1{padding-left:10px;padding-right:10px;}}
+
+
+/************************************************************* WIDGETS ******************************************************/
+
+/* Repartition verticale des éléments d'une colonne */
+/* Activer egual height top sur rangée principale */
+
+.betweenCol > .vc_column-inner > .wpb_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cornerBox {
+    width: 100px;
+    height: 135px;
+    background-color: #d3394c;
+    display: block;
+    position: relative;
+    padding: 30px;
+    margin: 0 auto 10px;
+}
+.cornerBox:after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #722040;
+}
+.cornerBox:before {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 20px solid #dfc8ca;
+    border-left: 20px solid transparent;
+}
+
+
+/**************************************** Params Avis & Contact *****************************/
+
+/***** PARAMS CONTACT >> form mappy */
+.leaflet-top, .leaflet-bottom {z-index: 1}
+/*
+.vc_mappy-map{pointer-events: none}
+.mapper > div > div > div, .mapper > div > div, .mapper > div {height: 100%!important;position: relative!important;}
+.vc_mappy-map {pointer-events: none;position: absolute;height: 100%!important;width: 100%;}
+*/
+
+
+/*form contact >> alignement des champs nom et prenom et redimentionnement à 100% de largeur */
+body .vc_row .gform_wrapper .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span {
+    width: 100%!important;
+    margin-right: 0!important;
+}
+
+/* style mentions légales */
+.requiredML{color:red}
+.contentML {font-size: 9px;margin-top: 10px;}
+.mentionsLegales {text-align: justify;margin: 30px 0;padding: 20px;background-color: #323232;color: white;}
+/* *****************************************Module avis pj **********************************************/
+/** requiere form avis **/
+.pj-reviews-form #respond .required {color: red;}
+/** Titre form **/
+.pj-reviews-form label {color: white;font-weight: 300;}/* AVIS */
+.gform_body label {color: white;font-weight: 300!important;} /* CONTACT */
+/** Etoiles de vote | le  filter permet une colorisation plus intense **/
+.pj-ratings-input-container:not(:checked) > label:hover:before, .pj-ratings-input-container:not(:checked) > label:hover ~ label:before {-webkit-filter: invert(25%) sepia() saturate(10000%) hue-rotate(10deg);filter: invert(25%) sepia() saturate(10000%) hue-rotate(10deg);}/** Rouge **/
+/********************************************** END AVIS & CONTACT ****************************************************/
+
+/** WIDGET **/
+.titleFlatBox {font: normal normal 700 semi-condensed 20px/30px 'Josefin Sans',serif;text-transform: uppercase;}
+.titlePicto {font: normal normal 700 semi-condensed 15px/15px Lato,serif;text-transform: uppercase;}
+.get_in_touch{background-color:#333;}
+.vc_carousel-inner {text-align: center;}/* Center image carousel */
+
+/** ToolTip MediaGrid **/
+.myTooltip {background: black;height: auto;width: 90%;position: absolute;left: 50%;transform: translateX(-50%);bottom: -30px;color: white;line-height: 30px;text-align: center;opacity: 0;transition: all .6s;}
+.vc_grid-item-mini:hover .myTooltip {background: rgba(0, 0, 0, 0.39);width: 94%;transform: translateX(-50.6%);bottom: 8px;opacity: 1;transition: all .6s;}
+
+
+/**************** FLAT BOX ************/
+.flat_box .desc_wrapper {margin-left: 0;text-align: center;padding: 10px;}
+.wpb_wrapper .flat_box .photo_wrapper .icon i {display: -webkit-box;display: -ms-flexbox;display: flex;height: 80px;line-height: 80px;font-size: 80px;margin-top: -40px;}
+.wpb_wrapper .flat_box .photo_wrapper .icon {width: 90px;color: #99CFFF;text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.31);}
+
+@media only screen and (max-width: 959px) and (min-width: 768px){
+    .flat_box .photo_wrapper .icon i {height: 60px!important;line-height: 60px!important;font-size: 60px!important;margin-top: -20px!important;}
+    .flat_box .photo_wrapper .icon {width: 70px!important;}
+    .flat_box:hover .photo_wrapper .icon, .flat_box a:hover .photo_wrapper .icon {-webkit-transform: translateX(-70px)!important;transform: translateX(-70px)!important;}
+}
+
+/** BOUTONS **/
+
+/*** ANIMATION BOUTON LINE TOP BOTTOM ***/
+.lineLink a {position: relative;color: #FA861E!important;text-shadow: 0 0 1px black;overflow: hidden;min-height: 27px;}
+.lineLink a:hover::after, .lineLink a:hover::before {content: '';background: #FA861E;background-size: 1px 50px;color: #FA861E!important;box-shadow: 0 0 1px black;height: 1px;width: 100%;position: absolute;transition: all .4s;}
+.lineLink a:after,.lineLink a:before {content: '';background: #FA861E;background-size: 1px 50px;color: #FA861E!important;box-shadow: 0 0 1px black;height: 1px;width: 0;position: absolute;transition: all .4s;}
+.lineLink a:hover::after {top: 110%;left: 0;}
+.lineLink a:after {top: 110%;left: 0;}
+.lineLink a:hover::before {bottom: 100%;left: 0;}
+.lineLink a:before {bottom: 100%;left: 100%;}
+
+p a:hover {text-decoration: inherit;}
+a, a:visited, a:focus {    overflow: hidden;}
+/****** END LINE LINK ***********/
+
+/***** MENU ******
+.menu-item a span{position: relative;color: #fff!important;text-shadow: 0 0 1px black;}
+.menu-item a span:hover::after, .menu-item a span:hover::before, .current-menu-item a span:before,.current-menu-item a span:after {content: '';background: #FA861E;background-size: 1px 50px;color: #FA861E!important;box-shadow: 0 0 1px black;height: 1px;width: 100%;position: absolute;transition: all .4s;}
+.menu-item a span:after,.menu-item a span:before {content: '';background: #FA861E;background-size: 1px 50px;color: #FA861E!important;box-shadow: 0 0 1px black;height: 1px;width: 0;position: absolute;transition: all .4s;}
+.menu-item a span:after {top: 98%;right: 100%;}
+.menu-item a span:before {bottom: 98%;left: 100%;}
+.menu-item a span:hover::after, .current-menu-item a span:after {top: 98%;right: 0;}
+.menu-item a span:hover::before{bottom: 98%;left: 0;}
+.menu-item a span:hover, .current_page_item a span{color: #FA861E!important;text-decoration: inherit;}
+.menu-item a span, .menu-item a span:visited, .menu-item a span:focus {    overflow: hidden;}
+
+.current-menu-item a span:before {bottom: 98%;left: 0;width: 100%;}
+.current-menu-item a span:after {bottom: 98%;right: 0;width: 100%;}
+
+.menu li:last-child a span {border-right: solid 1px orange!important;}
+.menu li:first-child a span {border-left: solid 1px orange;}
+/****************** END MENU ***********************/
+
+.myBtn .vc_btn3, .myBtnFooter .vc_btn3,.myBtn2 .vc_btn3, .myBtnFooter2 .vc_btn3{letter-spacing: 0;}
+.myBtn .vc_btn3:hover, .myBtnFooter .vc_btn3:hover,.myBtn2 .vc_btn3:hover, .myBtnFooter2 .vc_btn3:hover{letter-spacing: 1px;}
+
+.myBtn .vc_btn3, .myBtnFooter .vc_btn3 {background-color: #CFBDA5!important;border: solid 1px #555!important;background-image: none!important;font-weight: 300;text-transform: uppercase;color: #555!important;}
+.myBtn2 .vc_btn3, .myBtnFooter2 .vc_btn3 {background-color: #555!important;border: solid 1px #fff6e8!important;background-image: none!important;font-weight: 300;text-transform: uppercase;color: #fff6e8!important;}
+
+.myBtn .vc_btn3:hover, .myBtnFooter .vc_btn3:hover {background-color: #555!important;border: solid 1px #fff6e8!important;color: #CFBDA5!important;}
+.myBtn2 .vc_btn3:hover, .myBtnFooter2 .vc_btn3:hover {background-color: #CFBDA5!important;border: solid 1px #555!important;color: #555!important;}
+
+/* Bouton bloc anim  */
+.btnAnim:hover {transition: all .4s;}
+.btnAnim {cursor: pointer;transition: all .4s;}
+/***************** END BUTTON ************************/
+
+/** Animation cercle dans bouton **/
+.btnIco:after {background: #DD3333;height: 92%;width: 81%;border-radius: 100%;opacity: 0;}
+.btnIco:hover::after {height: 1%;width: 1%;border-radius: 127px;opacity: .5;}
+.btnIco:after,.btnIco:hover::after {top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);-webkit-transform-origin: center;transform-origin: center;border-radius: 127px;-webkit-transition: all .6s;transition: all .6s;}
+
+/** TOOLS **/
+.miseEnValeur {font: normal normal 600 semi-condensed 16px/23px Lato,serif;text-transform: uppercase;color: #000000;letter-spacing: 0.2em;padding: 10px;background: #DD3333;margin-bottom: 20px!important;border: double 3px white;}
+.miseEnValeur:first-letter {color: #FFFFFF;}
+
+/* Bloc evidence (mise en valeur) */
+.evidence > div:first-letter {font-size: 500%;font-family: 'Dancing Script', cursive;}
+.evidence {background: rgba(0, 0, 0, 0.45);color: white;border: solid 1px white;margin-bottom: 30px!important;box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.27);}
+.evidence > div {padding: 30px;box-shadow: 0 0 0 1px #d0d0d0;}
+.evidence > .wpb_wrapper p {color: white;font-family: 'Open Sans';font-size: 14px;}
+
+/* Liste personnalisée **/
+/* liste à puce personnalisées ***/
+.liPerso li {list-style: none!important;position: relative;color: #333;}
+.liPerso li:before {content: '';position: absolute;background: #49bbe4;background-repeat: no-repeat;transform: rotate(45deg);background-size: 15px;width: 10px;height: 10px;border: solid;left: -26px;top: 0;}
+/************************************************************************/
+/** Ajout d'un titre à un sous-menu circle */
+.t1, .t2, .t3, .t4 {font: normal normal 600 semi-condensed 16px/23px Exo,serif;color: white;text-transform: uppercase;}
+.t1:before, .t2:before, .t3:before, .t4:before{position: absolute;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);top: 50%;left: 50%;width: auto;}
+.t1:before {content: 'Titre 1';}.t2:before {content: 'Titre 2';}.t3:before {content: 'Titre 3';}.t4:before {content: 'Titre 4';}
+
+/** background pattern **/
+.bgPattern {
+    margin-bottom: 0px !important;
+    background-color: #69A37D;
+    background-image: url(/wp-content/uploads/sites/2575/2017/01/motif-rayures.png)!important;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    background-position-x: 10%;
+    baseline-shift: super;
+    background-blend-mode: screen;
+}
+.bgPattern{margin-bottom: 0px !important;background-image: url(https://npsi-npsp.site-privilege.pagesjaunes.fr/wp-content/uploads/sites/2575/2017/01/motif-rayures.png) !important;
+    background-position: 0 0 !important;background-repeat: repeat !important;}
+/* background pattern avec effet blend **/
+
+.bgPatternBlend {margin-bottom: 0px !important;background-color: rgba(105, 163, 125, 0.53);background-image: url(https://npsi-npsp.site-privilege.pagesjaunes.fr/wp-content/uploads/sites/2575/2017/01/motif-rayures.png)!important;
+    background-position: 0 0 !important;
+    background-blend-mode: color-dodge;
+}
+.the_content_wrapper .whiteLi ul li {
+    color: white;
+}
+.the_content_wrapper .white .wpb_wrapper p {
+    color: white;
+}
+
